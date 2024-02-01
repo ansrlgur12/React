@@ -57,7 +57,7 @@ const Group = () => {
     return (
         <group ref={groupRef}>
             <CameraControls
-                maxDistance={100}
+                maxDistance={40}
                 ref={cameraRef}
                 enabled={true}
                 dollyToCursor={false}

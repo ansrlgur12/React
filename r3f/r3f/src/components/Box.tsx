@@ -9,7 +9,21 @@ const COLOR_OPTIONS = [
   "beige", 
   "blue", 
   "green", 
-  "purple"
+  "purple",
+  "orange",
+  "cyan",
+  "pink",
+  "brown",
+  "aquamarine",
+  "burlywood",
+  "chocolate",
+  "darkslategray",
+  "firebrick",
+  "goldenrod",
+  "indigo",
+  "khaki",
+  "maroon",
+  "navy",
 ];
 
 
@@ -41,9 +55,9 @@ export default function Box({position}: CustomBoxProps) {
   }, [x, y, z]);
 
   useFrame(() => {
-    meshRef.current.rotation.x += 0.02;
+    meshRef.current.rotation.x += 0.011;
     meshRef.current.rotation.y += 0.01;
-    meshRef.current.rotation.z += 0.03;
+    meshRef.current.rotation.z += 0.009;
   });
 
   const randomColor = COLOR_OPTIONS[Math.floor(Math.random() * COLOR_OPTIONS.length)];
