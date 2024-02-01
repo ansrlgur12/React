@@ -25,7 +25,7 @@ export default function Box(props: BoxProps) {
       {...props}
     >
       <boxGeometry args={[4, 4, 4]} />
-      <meshStandardMaterial color={hovered ? "beige" : "royalblue"} />
+      <meshStandardMaterial color={hovered ? "beige" : "royalblue"}/>
     </mesh>
   );
 }

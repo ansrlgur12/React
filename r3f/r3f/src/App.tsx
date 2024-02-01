@@ -1,6 +1,8 @@
 import Box from "./components/Box"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
+import { randomPosition } from "./utils/RandomPosition"
+
 
 function App() {
 
@@ -13,7 +15,9 @@ function App() {
           }}
         >
           <ambientLight />
-          <Box position={[0, 0, 0]} />
+          <Box position={randomPosition()} />
+          <Box position={randomPosition()} />
+
           <OrbitControls />
         </Canvas>
       </div>
